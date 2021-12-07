@@ -1,39 +1,32 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import {Flex, Text, Box, Button, Heading, Input , useColorMode, useColorModeValue} from '@chakra-ui/react'
-
+import {Flex, Text, Spacer , Button, useColorMode, useColorModeValue} from '@chakra-ui/react'
+import About from '../pages/about'
+import Nav from '../components/Nav'
 export default function Home() {
   const {toggleColorMode} = useColorMode()
-  const formBackground = useColorModeValue("gray.100" , "gray.700")
+  
 
   return (
-    <div className={styles.container}>
+    <Flex direction="column">
       <Head>
         <title>Welcome to my Page| Maica Rumbaoa </title>
         <meta name="description" content="Maica Rumbaoa, Photographer based in Orange County, California" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
- 
-      <Flex height="100vh" alignItems="center"  direction="column" justifyContent="center">
-        <Button onClick={toggleColorMode}>Toggle Dark mode</Button>
-        <Button>About</Button>
-        <Button>Contact</Button>
-        <Button>Portfolio</Button>
-        <Text
-  bgGradient='linear(to-l, #7928CA, #FF0080)'
-  bgClip='text'
-  fontSize='6xl'
-  fontWeight='extrabold'
->
-  Maica Rumbaoa Photography
-</Text>
-
-       
+      
+      <Flex height="100vh" backgroundImage="/images/bgbrown.jpg "backgroundPosition="center" backgroundRepeat="no-repeat" objectFit="cover" direction="column">
+            <Flex mt={2} direction="row" justifyContent="center">
+             <Nav/>   
+             <Text bgGradient='linear(to-l, #000, #FFFAF0)' bgClip='text' fontSize='8xl' textShadow="-3px -2px #fff" fontWeight='extrabold' align="right" justifyContent="center"  m={10}>Maica Rumbaoa Photography</Text>
+            </Flex>
 
       </Flex>
-     
-    </div>
+      <Flex height="100vh"  bgColor="orange.400" justifyContent="center"> 
+            <About/>
+      </Flex>
+    </Flex>
   )
 }
+
+
+
