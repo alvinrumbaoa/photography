@@ -14,7 +14,7 @@ const Nav = () => {
 
 	return (
 		
-		<MotionFlex direction="Column"  direction="row" justifyContent="spaceBetween" initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
+		<MotionFlex direction="row" justifyContent="spaceBetween" initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
 			<HStack spacing="20px">
 		    	<Button m={3} size="md" color="#fff" variant='solid'><Link href="/"><Image src="images/Home Page.svg" alt="" boxSize="60px" /></Link></Button>
               <Button m={3} size="md" color="#fff" variant='solid'><Link href="/about"><Image src="images/about.svg" alt=""  boxSize="60px"/></Link></Button>
