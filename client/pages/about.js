@@ -14,7 +14,7 @@ const about =() => {
 					<Nav/>
 			</Flex>
 			<Flex>
-				<Text>My Name Is Maica Rumbaoa</Text>
+				<Text fontSize="50px">My Name Is Maica Rumbaoa</Text>
 			</Flex>
 		</MotionFlex>
 	)

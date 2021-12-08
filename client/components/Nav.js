@@ -8,9 +8,7 @@ import {animationOne, transition} from "../animation/Animation";
 
 const Nav = () => {
 
-	const MotionFlex = motion.custom(Flex);	
-
-
+	const MotionFlex = motion.custom(Flex);
 
 	return (
 		
