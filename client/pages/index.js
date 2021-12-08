@@ -27,7 +27,7 @@ function Home() {
               <Button m={3} size="md" color="#fff" variant='solid'><Link href="/contact">Contact</Link></Button>
               <Button m={4} size="md"  color="#fff" variant='solid'><Link href="/portfolio">Portfolio</Link></Button>
             </Flex>
-             <Text fontSize={{ base: '24px', md: '40px', lg: '56px' }} bgGradient='linear(to-l, #000, #FFFAF0)' bgClip='text' textShadow="-3px -2px #fff" fontWeight='extrabold' align="right" justifyContent="center"  m={20}>Maica Rumbaoa Photography</Text>
+             <Text fontSize={{ base: '50px', md: '60px', lg: '70px' , xl:'90px'}} bgGradient='linear(to-l, #000, #FFFAF0)' bgClip='text' textShadow="-3px -2px #fff" fontWeight='extrabold' align="right" justifyContent="center"  m={20}>Maica Rumbaoa Photography</Text>
             </Flex>
             <HStack spacing='30px' justifyContent='end' mr={20}>
               <Image src="/images/Facebooklight.svg" alt="facebookicon" boxSize="60px" objectFit="cover"/>

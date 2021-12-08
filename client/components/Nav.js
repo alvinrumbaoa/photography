@@ -1,10 +1,7 @@
 import React from 'react'
-import Head from 'next/head'
+import { Stack, HStack, VStack } from '@chakra-ui/react'
 import Link from 'next/link'
-import Image from 'next/image' 
-import {Flex, Text, Spacer , Button, useColorMode, useColorModeValue} from '@chakra-ui/react'
-import { Switch } from '@chakra-ui/react'
-import { createBreakpoints } from '@chakra-ui/theme-tools'
+import {Flex,Image, Button} from '@chakra-ui/react'
 import { motion } from "framer-motion";
 import {animationOne, transition} from "../animation/Animation";
 
@@ -12,16 +9,20 @@ import {animationOne, transition} from "../animation/Animation";
 const Nav = () => {
 
 	const MotionFlex = motion.custom(Flex);	
-	const {toggleColorMode} = useColorMode()
+
 
 
 	return (
-	
-		<MotionFlex direction="Column" justifyContent="spaceBetween" initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
-			<Button m={1} colorScheme='' color="#fff" variant='solid'>Home</Button>
-			<Button m={1} colorScheme='' color="#fff" variant='solid'>About</Button>
-			<Button m={1} colorScheme='' color="#fff" variant='solid'>Contact</Button>
-			<Button m={1} colorScheme=''  color="#fff" variant='solid'>Portfolio</Button>
+		
+		<MotionFlex direction="Column"  direction="row" justifyContent="spaceBetween" initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
+			<HStack spacing="20px">
+		    	<Button m={3} size="md" color="#fff" variant='solid'><Link href="/"><Image src="images/Home Page.svg" alt="" boxSize="60px" /></Link></Button>
+              <Button m={3} size="md" color="#fff" variant='solid'><Link href="/about"><Image src="images/about.svg" alt=""  boxSize="60px"/></Link></Button>
+              <Button m={3} size="md" color="#fff" variant='solid'><Link href="/contact"><Image src="images/contact.svg" alt="" boxSize="60px"/></Link></Button>
+              <Button m={3} size="md"  color="#fff" variant='solid'><Link href="/portfolio"><Image src="images/works.svg" alt="" boxSize="60px"/></Link></Button>
+
+			</HStack>
+			
         </MotionFlex>
 	)
 }
