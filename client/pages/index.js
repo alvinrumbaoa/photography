@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { Stack, HStack, VStack } from '@chakra-ui/react'
 
 import { motion } from "framer-motion";
-import {animationOne, transition} from "../animation/Animation";
+import {animationOne, transition} from "../animation/animation";
 
 const MotionFlex = motion.custom(Flex)
 function Home() {

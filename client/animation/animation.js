@@ -1,12 +1,12 @@
 export const animationOne ={
     hidden:{
-        opacity:2
-    },
-    in:{
         opacity:0
     },
+    in:{
+        opacity:1
+    },
     out:{
-        opacity: 2
+        opacity: 0
     }
 
 };
