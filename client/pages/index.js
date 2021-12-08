@@ -1,9 +1,14 @@
 import Head from 'next/head'
-import {Flex, Text, Spacer , Button, useColorMode, useColorModeValue} from '@chakra-ui/react'
-import About from '../pages/about'
-import Nav from '../components/Nav'
-export default function Home() {
-  const {toggleColorMode} = useColorMode()
+import {Flex, Image, Text, Button} from '@chakra-ui/react'
+import Link from 'next/link'  
+import { Stack, HStack, VStack } from '@chakra-ui/react'
+
+import { motion } from "framer-motion";
+import {animationOne, transition} from "../animation/Animation";
+
+const MotionFlex = motion.custom(Flex)
+function Home() {
+
   
 
   return (
@@ -14,19 +19,26 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <Flex height="100vh" backgroundImage="/images/bgbrown.jpg "backgroundPosition="center" backgroundRepeat="no-repeat" objectFit="cover" direction="column">
+      <MotionFlex height="100vh" backgroundImage="/images/bgbrown.jpg "backgroundPosition="center" backgroundRepeat="no-repeat" objectFit="cover" direction="column" initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
             <Flex mt={2} direction="row" justifyContent="center">
-             <Nav/>   
-             <Text bgGradient='linear(to-l, #000, #FFFAF0)' bgClip='text' fontSize='8xl' textShadow="-3px -2px #fff" fontWeight='extrabold' align="right" justifyContent="center"  m={10}>Maica Rumbaoa Photography</Text>
+            <Flex direction="Column" justifyContent="spaceBetween">
+              <Button m={3} size="md" color="#fff" variant='solid'><Link href="/">Home</Link></Button>
+              <Button m={4} size="md" color="#fff" variant='solid'><Link href="/about">About</Link></Button>
+              <Button m={3} size="md" color="#fff" variant='solid'><Link href="/contact">Contact</Link></Button>
+              <Button m={4} size="md"  color="#fff" variant='solid'><Link href="/portfolio">Portfolio</Link></Button>
             </Flex>
-
-      </Flex>
-      <Flex height="100vh"  bgColor="orange.400" justifyContent="center"> 
-            <About/>
-      </Flex>
+             <Text fontSize={{ base: '24px', md: '40px', lg: '56px' }} bgGradient='linear(to-l, #000, #FFFAF0)' bgClip='text' textShadow="-3px -2px #fff" fontWeight='extrabold' align="right" justifyContent="center"  m={20}>Maica Rumbaoa Photography</Text>
+            </Flex>
+            <HStack spacing='30px' justifyContent='end' mr={20}>
+              <Image src="/images/Facebooklight.svg" alt="facebookicon" boxSize="60px" objectFit="cover"/>
+              <Image src="/images/Instagramlight.svg" alt="igicon" boxSize="60px" objectFit="cover"/>
+              <Image src="/images/Newmaillight.svg" alt="mailicon" boxSize="60px" objectFit="cover"/>
+            </HStack>
+      </MotionFlex>
     </Flex>
   )
 }
 
 
 
+export default Home

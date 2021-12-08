@@ -6,12 +6,12 @@ import {Flex, Text, Spacer , Button, useColorMode, useColorModeValue} from '@cha
 import { Switch } from '@chakra-ui/react'
 import { createBreakpoints } from '@chakra-ui/theme-tools'
 
-const portfolio =()=> {
+const Layout =()=> {
 	return (
-		<Flex direction="Column" justifyContent="spaceBetween">
-			<Text bgGradient='linear(to-l, #000, #FFFAF0)' bgClip='text' fontSize='7xl' textShadow="-3px -2px #fff" fontWeight='extrabold' align="right" justifyContent="center" m={10}> Portfolio</Text>
-		</Flex>		
+		<div>
+			
+		</div>
 	)
 }
 
-export default portfolio
+export default Layout
