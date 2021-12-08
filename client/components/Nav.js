@@ -3,7 +3,7 @@ import { Stack, HStack, VStack } from '@chakra-ui/react'
 import Link from 'next/link'
 import {Flex,Image, Button} from '@chakra-ui/react'
 import { motion } from "framer-motion";
-import {animationOne, transition} from "../animation/Animation";
+import {animationOne, transition} from "../animation/animation";
 
 
 const Nav = () => {
