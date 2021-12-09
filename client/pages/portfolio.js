@@ -6,6 +6,7 @@ import Nav from '../components/Nav';
 import { Stack, HStack, VStack } from '@chakra-ui/react'
 import { motion } from "framer-motion";
 import Aos from "aos";
+import Gallery from "./api/gallery"
 import "aos/dist/aos.css"
 const MotionFlex = motion(Flex)
 React.useLayoutEffect = React.useEffect 
