@@ -1,4 +1,5 @@
-import ReactFocusLock, {useEffect} from 'react'
+import React, {useEffect} from 'react'
+React.useLayoutEffect = React.useEffect 
 import Head from 'next/head'
 import {Flex, Image, Text, Button, Box , Heading, Spinner , Divider} from '@chakra-ui/react'
 import Link from 'next/link'  
@@ -7,7 +8,7 @@ import Aos from "aos";
 import "aos/dist/aos.css"
 import { motion } from "framer-motion";
 
-const MotionFlex = motion.custom(Flex)
+const MotionFlex = motion(Flex)
 function Home() {
         
   useEffect(() =>{

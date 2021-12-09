@@ -1,27 +1,46 @@
-import React from 'react'
+import React, {useEffect , Suspense} from 'react'
+React.useLayoutEffect = React.useEffect 
 import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image' 
-import {Flex, Text, Spacer , Button, useColorMode, useColorModeValue} from '@chakra-ui/react'
-import { Switch } from '@chakra-ui/react'
-import { createBreakpoints } from '@chakra-ui/theme-tools'
+import {Flex, Heading, Text , Image , Box} from '@chakra-ui/react'
+import { Spinner } from '@chakra-ui/react'
+import Nav from '../components/Nav';
+import { Stack, HStack, VStack } from '@chakra-ui/react'
 import { motion } from "framer-motion";
-import {animationOne, transition} from "../animation/animation";
 
-const MotionFlex = motion.custom(Flex)
+import Aos from "aos";
+import "aos/dist/aos.css"
+
+const Gallery = React.lazy(() => import('./api/gallery'));
+
+const MotionFlex = motion(Flex)
 
 const contact = ()=> {
-
+	useEffect(() =>{
+		Aos.init({duration: 1000})
+	},[]);
 
 
 	return (
+		<Suspense fallback={<Spinner  thickness='4px'
+		speed='0.65s'
+		emptyColor='gray.200'
+		color='blue.500'
+		size='xl'/>}>
+		<MotionFlex bg="#FFDBCF" height="100vh"  direction="column"  initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }} transition={{duration: 1.2}}> 
 
-		<Flex direction="Column" justifyContent="center" initial={{opacity: 0}} animate={{opacity: 1}}exit={{opacity: 0 }} variants={animationOne} transition={transition}>
-			<Text bgGradient='linear(to-l, #000, #FFFAF0)' bgClip='text' fontSize='7xl' textShadow="-3px -2px #fff" fontWeight='extrabold' align="right" justifyContent="center" m={10}> Follow Us:</Text>
-		</Flex>
-
-	)
+			<Flex justifyContent="start" m={10}>
+					<Nav/>
+			</Flex>
+			<Flex direction="column" justifyContent="center" textAlign="center" data-aos="fade-left">
+					<Heading  fontSize='90px' justifyContent="center" color="#B56226" textShadow="-3px 3px #fff">Follow Me:</Heading>
+			</Flex>
+		</MotionFlex>
+      </Suspense>
+  );
 }
+
 
 
 export default contact

@@ -1,17 +1,44 @@
-import React from 'react'
+import React, {useEffect , Suspense} from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image' 
-import {Flex, Text, Spacer , Button, useColorMode, useColorModeValue} from '@chakra-ui/react'
-import { Switch } from '@chakra-ui/react'
-import { createBreakpoints } from '@chakra-ui/theme-tools'
+import {Flex, Heading, Text , Image , Box} from '@chakra-ui/react'
+import { Spinner } from '@chakra-ui/react'
+import Nav from '../components/Nav';
+import { Stack, HStack, VStack } from '@chakra-ui/react'
+import { motion } from "framer-motion";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
-const portfolio =()=> {
+const Gallery = React.lazy(() => import('./api/gallery'));
+const MotionFlex = motion(Flex)
+React.useLayoutEffect = React.useEffect 
+const contact = ()=> {
+	useEffect(() =>{
+		Aos.init({duration: 1000})
+	},[]);
+
+
 	return (
-		<Flex direction="Column" justifyContent="spaceBetween">
-			<Text bgGradient='linear(to-l, #000, #FFFAF0)' bgClip='text' fontSize='7xl' textShadow="-3px -2px #fff" fontWeight='extrabold' align="right" justifyContent="center" m={10}> Portfolio</Text>
-		</Flex>		
-	)
+
+		<MotionFlex bg="#FFDBCF" height="100vh"  direction="column"  initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }} transition={{duration: 1.2}}> 
+		{/* Navigation */}
+			<Flex justifyContent="start" m={10}>
+					<Nav/>
+			</Flex>
+		
+			<Flex direction="column" justifyContent="center" textAlign="center" data-aos="fade-left">
+					<Heading  fontSize='90px' justifyContent="center" color="#B56226" textShadow="-3px 3px #fff">Portfolio</Heading>
+			</Flex>
+			<Suspense fallback={<Spinner />}>
+					<Gallery/>
+			</Suspense>
+		</MotionFlex>
+    
+  );
 }
 
-export default portfolio
+
+
+export default contact
+
