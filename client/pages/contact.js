@@ -1,4 +1,4 @@
-import React, {useEffect , Suspense} from 'react'
+import React, {useEffect} from 'react'
 React.useLayoutEffect = React.useEffect 
 import Head from 'next/head'
 import {Flex, Heading, Text , Image , Box} from '@chakra-ui/react'
@@ -6,12 +6,8 @@ import { Spinner } from '@chakra-ui/react'
 import Nav from '../components/Nav';
 import { Stack, HStack, VStack } from '@chakra-ui/react'
 import { motion } from "framer-motion";
-
 import Aos from "aos";
 import "aos/dist/aos.css"
-
-const Gallery = React.lazy(() => import('./api/gallery'));
-
 const MotionFlex = motion(Flex)
 
 const contact = ()=> {
@@ -21,11 +17,7 @@ const contact = ()=> {
 
 
 	return (
-		<Suspense fallback={<Spinner  thickness='4px'
-		speed='0.65s'
-		emptyColor='gray.200'
-		color='blue.500'
-		size='xl'/>}>
+
 		<MotionFlex bg="#FFDBCF" height="100vh"  direction="column"  initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }} transition={{duration: 1.2}}> 
@@ -37,7 +29,7 @@ const contact = ()=> {
 					<Heading  fontSize='90px' justifyContent="center" color="#B56226" textShadow="-3px 3px #fff">Follow Me:</Heading>
 			</Flex>
 		</MotionFlex>
-      </Suspense>
+
   );
 }
 

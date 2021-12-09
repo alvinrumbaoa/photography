@@ -1,4 +1,4 @@
-import React, {useEffect , Suspense} from 'react'
+import React, {useEffect} from 'react'
 import Head from 'next/head'
 import {Flex, Heading, Text , Image , Box} from '@chakra-ui/react'
 import { Spinner } from '@chakra-ui/react'
@@ -7,10 +7,9 @@ import { Stack, HStack, VStack } from '@chakra-ui/react'
 import { motion } from "framer-motion";
 import Aos from "aos";
 import "aos/dist/aos.css"
-
-const Gallery = React.lazy(() => import('./api/gallery'));
 const MotionFlex = motion(Flex)
 React.useLayoutEffect = React.useEffect 
+
 const contact = ()=> {
 	useEffect(() =>{
 		Aos.init({duration: 1000})
@@ -30,9 +29,9 @@ const contact = ()=> {
 			<Flex direction="column" justifyContent="center" textAlign="center" data-aos="fade-left">
 					<Heading  fontSize='90px' justifyContent="center" color="#B56226" textShadow="-3px 3px #fff">Portfolio</Heading>
 			</Flex>
-			<Suspense fallback={<Spinner />}>
-					<Gallery/>
-			</Suspense>
+			<Flex>
+				<Gallery/>
+			</Flex>
 		</MotionFlex>
     
   );
