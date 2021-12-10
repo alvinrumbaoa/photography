@@ -29,8 +29,8 @@ const contact = ()=> {
 		
 			<Flex direction="column" justifyContent="center" textAlign="center" data-aos="fade-left">
 					<Heading  fontSize='90px' justifyContent="center" color="#B56226" textShadow="-3px 3px #fff">Portfolio</Heading>
-			</Flex>
-			<Flex>
+			</Flex >
+			<Flex justifyContent="center" align="center" mb={10}>
 				<Gallery/>
 			</Flex>
 		</MotionFlex>
