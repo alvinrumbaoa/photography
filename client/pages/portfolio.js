@@ -19,14 +19,17 @@ const contact = ()=> {
 
 	return (
 
-		<MotionFlex bg="#FFDBCF" height="100vh"  direction="column"  initial={{ opacity: 0 }}
+		<MotionFlex bg="#FFDBCF" height="1000vh"  direction="column"  initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }} transition={{duration: 1.2}}> 
 		{/* Navigation */}
-			<Flex justifyContent="start" m={10}>
+			<Flex position="relative">
+				<Image src="/images/brownwaves2.png"  w="100vw" data-aos="fade-down"alt="avatar"/>
+			</Flex>
+			<Flex justifyContent="start" ml={10} mt={-45}  position="relative">
 					<Nav/>
 			</Flex>
-		
+			
 			<Flex direction="column" justifyContent="center" textAlign="center" data-aos="fade-left">
 					<Heading  fontSize='90px' justifyContent="center" color="#B56226" textShadow="-3px 3px #fff">Portfolio</Heading>
 			</Flex >
