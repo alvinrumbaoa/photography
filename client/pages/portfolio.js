@@ -26,7 +26,7 @@ const contact = ()=> {
 			<Flex position="relative">
 				<Image src="/images/brownwaves2.png"  w="100vw" data-aos="fade-down"alt="avatar"/>
 			</Flex>
-			<Flex justifyContent="start" ml={10} mt={-45}  position="relative">
+			<Flex justifyContent="start" ml={10} >
 					<Nav/>
 			</Flex>
 			
@@ -36,6 +36,11 @@ const contact = ()=> {
 			<Flex justifyContent="center" align="center" mb={10}>
 				<Gallery/>
 			</Flex>
+			<VStack>
+				<Box></Box>
+				<Box></Box>
+				<Box></Box>
+			</VStack>
 		</MotionFlex>
     
   );

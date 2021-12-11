@@ -41,41 +41,62 @@ export default function gallery() {
 			width: 2000,
 			height: 'auto'
 		},
-		  {
+		{
 			src: '/images/grid5.jpg',
 			thumbnail: '/images/grid5.jpg',
 			caption: 'Consecutur adiscip elit',
 			width: 2000,
 			height: 'auto'
-		  },
-		  {
+		},
+		{
 			src: '/images/grid6.jpg',
 			thumbnail: '/images/grid6.jpg',
 			caption: 'Consecutur adiscip elit',
 			width: 2000,
 			height: 'auto'
-		  },
-		  {
+		},
+		{
 			src: '/images/grid7.jpg',
 			thumbnail: '/images/grid7.jpg',
 			caption: 'Consecutur adiscip elit',
 			width: 2000,
 			height: 'auto'
-		  },
-		  {
+		},
+		{
 			src: '/images/grid8.jpg',
-			thumbnail: 'images/grid8.jpg',
+			thumbnail: '/images/grid8.jpg',
 			caption: 'Consecutur adiscip elit',
 			width: 2000,
 			height: 'auto'
-		  },
-		  {
+		},
+		{
 			src: '/images/grid9.jpg',
 			thumbnail: '/images/grid9.jpg',
 			caption: 'Consecutur adiscip elit',
 			width: 2000,
 			height: 'auto'
-		  },
+		},
+		{
+			src: '/images/grid10.jpg',
+			thumbnail: '/images/grid9.jpg',
+			caption: 'Consecutur adiscip elit',
+			width: 2000,
+			height: 'auto'
+		},
+		{
+			src: '/images/grid11.jpg',
+			thumbnail: '/images/grid9.jpg',
+			caption: 'Consecutur adiscip elit',
+			width: 2000,
+			height: 'auto'
+		},
+		{
+			src: '/images/grid12.jpg',
+			thumbnail: '/images/grid9.jpg',
+			caption: 'Consecutur adiscip elit',
+			width: 2000,
+			height: 'auto'
+		},
 		]
 
 	return (
@@ -88,7 +109,7 @@ export default function gallery() {
 							images.map((image, idx)=>(
 								<MotionFlex  whileHover={{ scale: 1.1 }}  whileTap={{ scale: 0.9 }} >
 									<Link href="/api/images">
-										<Image src={image.src} alt="Portfolio" borderRadius='lg' boxShadow='xl'/>
+										<Image src={image.src} alt="Portfolio" borderRadius='lg' boxShadow='xl'   objectFit='cover'/>
 									</Link>
 								</MotionFlex>
 							))
