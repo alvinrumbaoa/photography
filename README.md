@@ -1,8 +1,10 @@
 <h1>Maica Rumbaoa Photography</h1>
+www.therumbaoas.com
 
 <p>Technologies Used: MR Photography 	MongoDB, Lightbox, React, Framer Motion, Express, Node, Axios, NextJs , ChakraUI </p>
 
 <h2>Features</h2>
+
 -Designed Wireframe and Workflow using Figma for faster Development process.
 
 -Static webpage application using MERN with well-designed photography portfolio for Display your photos in striking quality.
