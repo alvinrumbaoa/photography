@@ -1,11 +1,9 @@
 import React, {useEffect} from 'react'
 React.useLayoutEffect = React.useEffect 
 import Head from 'next/head'
-import {Flex, Heading, Text , Image , Box} from '@chakra-ui/react'
+import {Flex, Heading, Text , Image , Button, Box} from '@chakra-ui/react'
 import Nav from '../components/Nav';
-import { Stack, HStack, VStack } from '@chakra-ui/react'
 import { motion } from "framer-motion";
-import {animationOne, transition} from "../animation/animation";
 import Aos from "aos";
 import "aos/dist/aos.css"
 const MotionFlex = motion(Flex)
@@ -18,7 +16,7 @@ const about =() => {
 
 
 	return (
-		<MotionFlex bg="#FFDBCF" height="120vh"   direction="column"  initial={{ opacity: 0 }}
+		<MotionFlex bg="#FFDBCF"   direction="column"  initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }} transition={{duration: 1.2}}> 
 
@@ -27,9 +25,13 @@ const about =() => {
 			</Flex>
 			<Flex direction="row" >
 				<Flex direction="column" justifyContent="start" data-aos="fade-left">
-					<Heading ml={20} fontSize='90px' color="#B56226" textShadow="-3px 3px #fff" >My Name Is Maica Rumbaoa</Heading>
-					<Heading  ml={20} mt={10}  size='md' width="40vw" color="orange.900">I am a photographer based in Orange California. Love to Travel, Explore and Taking the Beauty of Nature.</Heading>
+					<Heading ml={20} fontSize='74px' color="#B56226" textShadow="-3px 3px #fff" >PLEASURE TO MEET YOU</Heading>
+					<Heading  ml={20} mt={10}  size='lg' width="50vw" color="orange.900" textShadow="-3px 3px #fff">I'm Maica, a photographer based in Orange California. Love to Travel, Explore and Taking the Beauty of Nature.</Heading>
+					<Text ml={20} mt={10}  size='lg' width="40vw" color="orange.800">
+Inspired and fascinated by connection, my passion is storytelling, and I want to help tell the story of your life and love! I will take the time to learn your journey, so we can create images which speak to who you are--Images which are curated moments, meant to showcase your pure, beautiful, quirky, authentic self. Let's shake it up and get away from the standard Pinterest poses...</Text>
+					<Button ml={20} mt={5} colorScheme='orange' size='md' w="200px">Let's Get Started</Button>
 				</Flex>
+				
 				<Flex  >
 					<Image src="/images/maica.png" data-aos="zoom-in" alt="avatar" boxSize='400px' mr={40}/>
 				</Flex>
