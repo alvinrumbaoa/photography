@@ -1,6 +1,6 @@
 Maica Rumbaoa Photography
 
-<bold>Features</bold>
+<h2>Features</h2>
 
 </hr>
 
