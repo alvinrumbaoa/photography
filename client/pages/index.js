@@ -34,15 +34,15 @@ function Home() {
               <Image src="/images/Camera.svg" alt="logo" boxSize="60px" justifyContent="center"/>
             </Flex>
             <Divider orientation='horizontal' />
-              <Button  m={6} p={5} size="lg" color="#fff" bg="none" variant='solid'><Link href="/about">Information</Link></Button>
-              <Button  m={6} p={5}  size="lg" color="#fff" bg="none"  variant='solid'><Link href="/contact">Contact</Link></Button>
-              <Button  m={6} p={5} size="lg"  color="#fff" bg="none" variant='solid'><Link href="/portfolio">Galleries</Link></Button>
+              <Button  m={10} p={6} fontSize="2xl" color="#fff" bg="none" variant='solid'><Link href="/about">Information</Link></Button>
+              <Button  m={10} p={6}  fontSize="2xl" color="#fff" bg="none"  variant='solid'><Link href="/contact">Contact</Link></Button>
+              <Button  m={10} p={6} fontSize="2xl"  color="#fff" bg="none" variant='solid'><Link href="/portfolio">Galleries</Link></Button>
             
             </Stack>
-             <Heading data-aos="fade-left" fontSize={{ base: '50px', md: '60px', lg: '70px' , xl:'90px'}} bgGradient='linear(to-l, #000, #FFFAF0)' bgClip='text' textShadow="-3px -2px #fff" fontWeight='extrabold' align="right" justifyContent="center"  m={20}>Maica Rumbaoa Photography</Heading>
+             <Heading data-aos="fade-left" fontSize={{ base: '60px', md: '70px', lg: '95px' , xl:'100px'}} bgGradient='linear(to-l, #000, #FFFAF0)' bgClip='text' textShadow="-3px -2px #fff" fontWeight='extrabold' align="right" justifyContent="center"  m={20}>Maica Rumbaoa Photography</Heading>
             </Flex>
             <HStack spacing='30px' justifyContent='end' mr={20}>
-           <Image src="/images/Facebooklight.svg" alt="facebookicon" boxSize="60px" objectFit="cover"/>
+              <Image src="/images/Facebooklight.svg" alt="facebookicon" boxSize="60px" objectFit="cover"/>
               <Image src="/images/Instagramlight.svg" alt="igicon" boxSize="60px" objectFit="cover"/>
               <Image src="/images/Newmaillight.svg" alt="mailicon" boxSize="60px" objectFit="cover"/>
             </HStack>
