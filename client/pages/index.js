@@ -39,7 +39,8 @@ function Home() {
               <Heading  m={10} p={6} fontSize="3xl"  color="#a44200"  textShadow="3px -3px  #fff"bg="none" variant='solid'><Link href="/portfolio">Galleries</Link></Heading>
             
             </Stack>
-             <Heading data-aos="fade-left" fontSize={{ base: '75px', md: '90px', lg: '120px' , xl:'150px'}} bgGradient='linear(to-r, #fff, #f2c17d)' textShadow="-10px -10px  #a44200" fontWeight='extrabold' align="right" justifyContent="center"  m={20}>Maica Rumbaoa Photography</Heading>
+             <Heading data-aos="fade-left" fontSize={{ base: '75px', md: '90px', lg: '120px' , xl:'150px'}} bgGradient='linear(to-r, #fff, #f2c17d)'
+  bgClip='text'  bgClip='text' textShadow="-10px -10px  #a44200" fontWeight='extrabold' align="right" justifyContent="center"  m={20}>Maica Rumbaoa Photography</Heading>
             </Flex>
             <HStack spacing='30px' justifyContent='end' mr={20}>
                 <Link href="https://www.facebook.com/maicz.G">
