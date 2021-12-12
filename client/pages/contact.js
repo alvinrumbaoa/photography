@@ -2,9 +2,8 @@ import React, {useEffect} from 'react'
 React.useLayoutEffect = React.useEffect 
 import Head from 'next/head'
 import {Flex, Heading, Text , Image , Box} from '@chakra-ui/react'
-import { Spinner } from '@chakra-ui/react'
 import Nav from '../components/Nav';
-import { Stack, HStack, VStack } from '@chakra-ui/react'
+import { HStack } from '@chakra-ui/react'
 import { motion } from "framer-motion";
 import Aos from "aos";
 import "aos/dist/aos.css"
@@ -21,6 +20,11 @@ const contact = ()=> {
 		<MotionFlex bg="#FFDBCF" height="100vh"  direction="column"  initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }} transition={{duration: 1.2}}> 
+		<Head>
+			<title>Contact Me| Maica Rumbaoa </title>
+			<meta name="description" content="Maica Rumbaoa, Photographer based in Orange County, California" />
+			<link rel="icon" href="/favicon.ico" />
+      	</Head>
 				<Flex mt={-50}>
 					<Image src="/images/brownwaves2.png"h="20vh" w="100vw" alt="avatar"/>
 				</Flex>

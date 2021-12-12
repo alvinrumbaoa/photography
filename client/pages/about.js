@@ -19,6 +19,11 @@ const about =() => {
 		<MotionFlex bg="#FFDBCF" height="100vh" direction="column"  initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }} transition={{duration: 1.2}}> 
+		<Head>
+			<title>About Maica| Maica Rumbaoa </title>
+			<meta name="description" content="Maica Rumbaoa, Photographer based in Orange County, California" />
+			<link rel="icon" href="/favicon.ico" />
+      	</Head>
 				<Flex mt={-50}>
 					<Image src="/images/brownwaves2.png"h="20vh" w="100vw" alt="avatar"/>
 				</Flex>

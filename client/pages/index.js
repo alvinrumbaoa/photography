@@ -31,7 +31,7 @@ function Home() {
             <Flex mt={2} direction="row" justifyContent="center">
             <Stack direction="column" justifyContent="spaceBetween" height="10vh">
             <Flex direction="row" m={5} justifyContent="center" width="15vw" height="12vh" data-aos="fade-down">
-              <Image src="/images/Camera.svg" alt="logo" boxSize="60px" justifyContent="center"/>
+              <Image src="/images/Camera.svg" alt="logo" boxSize="100px" justifyContent="center"/>
             </Flex>
             <Divider orientation='horizontal' />
               <Button  m={10} p={6} fontSize="2xl" color="#fff" bg="none" variant='solid'><Link href="/about">Information</Link></Button>
@@ -39,12 +39,13 @@ function Home() {
               <Button  m={10} p={6} fontSize="2xl"  color="#fff" bg="none" variant='solid'><Link href="/portfolio">Galleries</Link></Button>
             
             </Stack>
-             <Heading data-aos="fade-left" fontSize={{ base: '60px', md: '70px', lg: '95px' , xl:'100px'}} bgGradient='linear(to-l, #000, #FFFAF0)' bgClip='text' textShadow="-3px -2px #fff" fontWeight='extrabold' align="right" justifyContent="center"  m={20}>Maica Rumbaoa Photography</Heading>
+             <Heading data-aos="fade-left" fontSize={{ base: '75px', md: '90px', lg: '120px' , xl:'150px'}} bgGradient='linear(to-r, #fff, #f2c17d)'
+  bgClip='text'  bgClip='text' textShadow="-10px -10px  #a44200" fontWeight='extrabold' align="right" justifyContent="center"  m={20}>Maica Rumbaoa Photography</Heading>
             </Flex>
             <HStack spacing='30px' justifyContent='end' mr={20}>
-              <Image src="/images/Facebooklight.svg" alt="facebookicon" boxSize="60px" objectFit="cover"/>
-              <Image src="/images/Instagramlight.svg" alt="igicon" boxSize="60px" objectFit="cover"/>
-              <Image src="/images/Newmaillight.svg" alt="mailicon" boxSize="60px" objectFit="cover"/>
+              <Image src="/images/Facebooklight.svg" alt="facebookicon" boxSize="100px" objectFit="cover"/>
+              <Image src="/images/Instagramlight.svg" alt="igicon" boxSize="100px" objectFit="cover"/>
+              <Image src="/images/Newmaillight.svg" alt="mailicon" boxSize="100px" objectFit="cover"/>
             </HStack>
       </MotionFlex>
     </Flex>
