@@ -60,7 +60,7 @@ const contact = ()=> {
 				</HStack>
 			
 				<Flex mt={-50}>
-					<Image src="/images/brownwaves.png"  h="20vh" w="100vw" alt="avatar"/>
+					<Image src="/images/brownwaves.png" h="20vh" w="100vw" alt="avatar"/>
 				</Flex>
 		</MotionFlex>
     

@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react'
 React.useLayoutEffect = React.useEffect 
 import Head from 'next/head'
-import {Flex, Heading, Text , Image , Box} from '@chakra-ui/react'
+import Link from 'next/link'
+import {Flex, Heading, Image } from '@chakra-ui/react'
 import Nav from '../components/Nav';
 import { HStack } from '@chakra-ui/react'
 import { motion } from "framer-motion";
@@ -34,9 +35,15 @@ const contact = ()=> {
 			<Flex direction="column" justifyContent="center" textAlign="center" data-aos="fade-left">
 					<Heading  fontSize='90px' justifyContent="center" color="#B56226" textShadow="-3px 3px #fff">Follow Me:</Heading>
 					<HStack spacing='30px' justifyContent='center' m={20}>
-						<Image src="/images/Facebook.svg" alt="facebookicon" boxSize="60px" objectFit="cover"/>
-						<Image src="/images/Instagram.svg" alt="igicon" boxSize="60px" objectFit="cover"/>
-						<Image src="/images/New Message.svg" alt="mailicon" boxSize="60px" objectFit="cover"/>
+					<Link href="https://www.facebook.com/maicz.G">
+						<Image src="/images/Facebook.svg" alt="facebookicon" boxSize="100px" objectFit="cover"/>
+					</Link> 
+					<Link href="https://www.instagram.com/_maics_/">
+						<Image src="/images/Instagram.svg" alt="igicon" boxSize="100px" objectFit="cover"/>
+					</Link>
+					<Link href="mailto:maicaalvinwedding2018@gmail.com">
+						<Image src="/images/New Message.svg" alt="mailicon" boxSize="100px" objectFit="cover"/>
+					</Link>
 					</HStack>
 					<Flex>
 

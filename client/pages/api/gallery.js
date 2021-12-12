@@ -110,7 +110,7 @@ export default function gallery() {
 					{
 						images.map((image, idx)=>(
 							<MotionFlex  borderRadius="md" whileHover={{ scale: 1.1 }}  whileTap={{ scale: 0.9 }} >			
-									<Image src={image.src} data-aos="zoom-in" alt={image.caption} borderRadius="20px" boxShadow="3px 2px 2px gray"/>
+									<Image src={image.src} data-aos="zoom-in" alt={image.caption} borderRadius="20px"/>
 							</MotionFlex>
 						))
 					}

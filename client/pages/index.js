@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react'
 React.useLayoutEffect = React.useEffect 
 import Head from 'next/head'
-import {Flex, Image, Text, Button, Box , Heading, Spinner , Divider} from '@chakra-ui/react'
+import {Flex, Image, Heading, Divider} from '@chakra-ui/react'
 import Link from 'next/link'  
-import { Stack, HStack, VStack } from '@chakra-ui/react'
+import { Stack, HStack } from '@chakra-ui/react'
 import Aos from "aos";
 import "aos/dist/aos.css"
 import { motion } from "framer-motion";
@@ -34,18 +34,23 @@ function Home() {
               <Image src="/images/Camera.svg" alt="logo" boxSize="100px" justifyContent="center"/>
             </Flex>
             <Divider orientation='horizontal' />
-              <Button  m={10} p={6} fontSize="2xl" color="#fff" bg="none" variant='solid'><Link href="/about">Information</Link></Button>
-              <Button  m={10} p={6}  fontSize="2xl" color="#fff" bg="none"  variant='solid'><Link href="/contact">Contact</Link></Button>
-              <Button  m={10} p={6} fontSize="2xl"  color="#fff" bg="none" variant='solid'><Link href="/portfolio">Galleries</Link></Button>
+              <Heading  m={10} p={6} fontSize="3xl" color="#a44200"  textShadow="3px -3px  #fff"bg="none" variant='solid'><Link href="/about">Information</Link></Heading>
+              <Heading  m={10} p={6}  fontSize="3xl" color="#a44200"  textShadow="3px -3px  #fff"bg="none"  variant='solid'><Link href="/contact">Contact</Link></Heading>
+              <Heading  m={10} p={6} fontSize="3xl"  color="#a44200"  textShadow="3px -3px  #fff"bg="none" variant='solid'><Link href="/portfolio">Galleries</Link></Heading>
             
             </Stack>
-             <Heading data-aos="fade-left" fontSize={{ base: '75px', md: '90px', lg: '120px' , xl:'150px'}} bgGradient='linear(to-r, #fff, #f2c17d)'
-  bgClip='text'  bgClip='text' textShadow="-10px -10px  #a44200" fontWeight='extrabold' align="right" justifyContent="center"  m={20}>Maica Rumbaoa Photography</Heading>
+             <Heading data-aos="fade-left" fontSize={{ base: '75px', md: '90px', lg: '120px' , xl:'150px'}} bgGradient='linear(to-r, #fff, #f2c17d)' textShadow="-10px -10px  #a44200" fontWeight='extrabold' align="right" justifyContent="center"  m={20}>Maica Rumbaoa Photography</Heading>
             </Flex>
             <HStack spacing='30px' justifyContent='end' mr={20}>
-              <Image src="/images/Facebooklight.svg" alt="facebookicon" boxSize="100px" objectFit="cover"/>
-              <Image src="/images/Instagramlight.svg" alt="igicon" boxSize="100px" objectFit="cover"/>
-              <Image src="/images/Newmaillight.svg" alt="mailicon" boxSize="100px" objectFit="cover"/>
+                <Link href="https://www.facebook.com/maicz.G">
+                  <Image src="/images/Facebooklight.svg" alt="facebookicon" boxSize="100px" objectFit="cover"/>
+                </Link> 
+                <Link href="https://www.instagram.com/_maics_/">
+                  <Image src="/images/Instagramlight.svg" alt="igicon" boxSize="100px" objectFit="cover"/>
+                </Link>
+                <Link href="mailto:maicaalvinwedding2018@gmail.com">
+                  <Image src="/images/Newmaillight.svg" alt="mailicon" boxSize="100px" objectFit="cover"/>
+                </Link>
             </HStack>
       </MotionFlex>
     </Flex>
