@@ -26,4 +26,4 @@ Gallery
 ![galleries](https://user-images.githubusercontent.com/79444246/147673628-124a3eab-db7e-42ec-a536-f111c3a1e10f.png)
 
 Contactus
-![Contact us](https://user-images.githubusercontent.com/79444246/147673640-0284eff2-42cc-4127-a914-530ed92a1552.png)
+![Screen Shot 2021-12-29 at 6 52 02 AM](https://user-images.githubusercontent.com/79444246/147674518-dc174f8d-cc38-4aa8-88d5-5364f17e165c.png)
