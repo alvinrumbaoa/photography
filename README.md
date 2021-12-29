@@ -15,4 +15,15 @@ www.therumbaoas.com
 
 </hr>
 
-Wireframing Mockup using Figma:
+Home Page
+![home](https://user-images.githubusercontent.com/79444246/147673599-1fdcb570-718c-45a5-bbc8-77817fa3048a.png)
+
+
+About Page
+![about](https://user-images.githubusercontent.com/79444246/147673618-d58b24ab-e7db-47af-8705-48dc359335e0.png)
+
+Gallery
+![galleries](https://user-images.githubusercontent.com/79444246/147673628-124a3eab-db7e-42ec-a536-f111c3a1e10f.png)
+
+Contactus
+![Contact us](https://user-images.githubusercontent.com/79444246/147673640-0284eff2-42cc-4127-a914-530ed92a1552.png)
