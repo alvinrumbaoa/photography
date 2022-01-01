@@ -60,7 +60,7 @@ const contact = ()=> {
 							<Link href="mailto:maicaalvinwedding2018@gmail.com">
 								<Image src="/images/New Message.svg" alt="mailicon" boxSize="100px" objectFit="cover"/>
 							</Link>
-						</HStack>
+							</HStack>
 						</VStack>
 						<form>
 							<Stack p={30} w="500px" h="800px" direction="column" direction="column"  mr={10}data-aos="fade-right" align="center"  borderRadius="30px" boxShadow="3px 2px 10px gray" >

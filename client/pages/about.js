@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 React.useLayoutEffect = React.useEffect 
 import Head from 'next/head'
+import Link from 'next/link'
 import {Flex, Heading, Text , Image , Button, Box} from '@chakra-ui/react'
 import Nav from '../components/Nav';
 import { motion } from "framer-motion";
@@ -23,7 +24,7 @@ const about =() => {
 			<title>About Maica| Maica Rumbaoa </title>
 			<meta name="description" content="Maica Rumbaoa, Photographer based in Orange County, California" />
 			<link rel="icon" href="/favicon.ico" />
-      	</Head>
+      	</Head>	
 				<Flex mt={-50}>
 					<Image src="/images/brownwaves2.png"h="20vh" w="100vw" alt="avatar"/>
 				</Flex>
@@ -36,7 +37,7 @@ const about =() => {
 					<Heading  ml={20} mt={10}  size='lg' width="50vw" color="orange.900" textShadow="-3px 3px #fff">I'm Maica, a photographer based in Orange California. Love to Travel, Explore and Taking the Beauty of Nature.</Heading>
 					<Text ml={20} mt={10}  size='lg' width="40vw" color="orange.800">
 						Inspired and fascinated by connection, my passion is storytelling, and I want to help tell the story of your life and love! I will take the time to learn your journey, so we can create images which speak to who you are--Images which are curated moments, meant to showcase your pure, beautiful, quirky, authentic self. Let's shake it up and get away from the standard Pinterest poses...</Text>
-					<Button ml={20} mt={5} colorScheme='orange' size='md' w="200px">Let's Get Started</Button>
+					<Button ml={20} mt={5} colorScheme='orange' size='md' w="200px"><Link href="/contact">Let's Get Started</Link></Button>
 				</Flex>
 				
 				<Flex  >
