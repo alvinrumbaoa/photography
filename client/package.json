@@ -10,7 +10,7 @@
   "dependencies": {
     "@chakra-ui/icons": "^1.1.1",
     "@chakra-ui/react": "^1.7.2",
-    "@emotion/react": "^11.7.0",
+    "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.6.0",
     "aos": "^2.3.4",
     "formik": "^2.2.9",
